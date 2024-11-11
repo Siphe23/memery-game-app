@@ -14,7 +14,7 @@ const generateCards = () => {
 };
 
 app.get('/cards', (req, res) => {
-  res.json(generateCards());
+  res.json(generateCards()); // Return the generated cards
 });
 
 app.listen(port, () => {

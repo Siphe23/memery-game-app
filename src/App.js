@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { flipCard, setScore } from './redux/actions';
 import axios from 'axios';
@@ -13,8 +13,8 @@ const App = () => {
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
-    // Fetch cards from the server
-    axios.get('/cards')
+    // Fetch cards from the server (updated URL)
+    axios.get('http://localhost:5000/cards')  // Changed URL to point to localhost:5000
       .then((response) => {
         dispatch({ type: 'SET_CARDS', payload: response.data });
       })
