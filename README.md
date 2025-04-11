@@ -39,5 +39,5 @@ The **Card Guessing Game** is a memory-based matching game built with **Node.js*
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/card-guessing-game.git
+  https://github.com/Siphe23/memery-game-app.git
    cd card-guessing-game
